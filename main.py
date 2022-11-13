@@ -8,7 +8,7 @@ import mysql.connector
 from mysql.connector import errorcode
 def call_db():
     try:
-        db_connection = mysql.connector.connect(host='127.0.0.1', user='root', password='', database='to_do_list_database')
+        db_connection = mysql.connector.connect(host='127.0.0.1', user='root', password='alex1234', database='proyect_01')
         print("Database connection made!")
     except mysql.connector.Error as error:
         if error.errno == errorcode.ER_BAD_DB_ERROR:
